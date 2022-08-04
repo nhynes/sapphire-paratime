@@ -15,6 +15,8 @@ import type {
   SnakeCasedProperties,
 } from 'type-fest';
 
+import { MAINNET_CHAIN_ID, TESTNET_CHAIN_ID } from '.';
+
 const DEFAULT_GAS_PRICE = 1;
 const DEFAULT_GAS_LIMIT = 30_000_000;
 const DEFAULT_VALUE = 0;
@@ -154,7 +156,7 @@ async function signCall(
   overrides?: Partial<{ chainId: number }>,
 ): Promise<Uint8Array> {
   const chainId = overrides?.chainId ?? (await signer.getChainId());
-  if (chainId !== 0x5afe && chainId !== 0x5aff) {
+  if (chainId !== MAINNET_CHAIN_ID && chainId !== TESTNET_CHAIN_ID) {
     throw new Error(
       'Signed queries can only be sent to Sapphire or Sapphire Testnet. Please check your Web3 provider connection.',
     );
