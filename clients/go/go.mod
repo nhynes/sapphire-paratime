@@ -1,4 +1,4 @@
-module github.com/oasisprotocol/sapphire-paratime
+module github.com/oasisprotocol/sapphire-paratime/clients/go
 
 go 1.17
 
