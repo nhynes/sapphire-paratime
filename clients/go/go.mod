@@ -1,10 +1,10 @@
-module github.com/oasisprotocol/sapphire-paratime/clients/go
+module github.com/nhynes/sapphire-paratime/clients/go
 
-go 1.17
+go 1.19
 
 require (
-		github.com/ethereum/go-ethereum v1.10.26
-		github.com/oasisprotocol/emerald-web3-gateway v1.3.2-0.20220819151005-ed83ad4ae5be
+	github.com/ethereum/go-ethereum v1.10.26
+	github.com/oasisprotocol/emerald-web3-gateway v1.3.2-0.20220819151005-ed83ad4ae5be
 )
 
 require (
@@ -65,7 +65,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/deckarep/golang-set v1.8.0 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.1.0 // indirect
-	github.com/fxamacker/cbor/v2 v2.4.0 // indirect
+	github.com/fxamacker/cbor/v2 v2.4.0
 	github.com/go-ole/go-ole v1.2.1 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -83,7 +83,7 @@ require (
 	github.com/tklauser/go-sysconf v0.3.5 // indirect
 	github.com/tklauser/numcpus v0.2.2 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	golang.org/x/crypto v0.3.0 // indirect
+	golang.org/x/crypto v0.3.0
 	golang.org/x/sys v0.2.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
